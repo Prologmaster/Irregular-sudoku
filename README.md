@@ -1,3 +1,7 @@
+1. Introduction
+XXXXXXXX
+
+2. Explanation
 	/*
 	sudoku(+Matrix)
 		it is true if Matrix unify with a 9x9 matrix 
@@ -12,6 +16,7 @@
 		maplist(all_distinct, Matrix),
 		transpose(Matrix, Matrix2),
 		maplist(all_distinct, Matrix2),
+• Name lines and their elements
 		Matrix= [L1, L2, L3, L4, L5, L6, L7, L8, L9],
 	L1 = [E11, E12, E13, E14, E15, E16, E17, E18, E19],
 	L2 = [E21, E22, E23, E24, E25, E26, E27, E28, E29],
@@ -23,6 +28,7 @@
 	L8 = [E81, E82, E83, E84, E85, E86, E87, E88, E89],
 	L9 = [E91, E92, E93, E94, E95, E96, E97, E98, E99],
 	
+• Set apart each group depending on colors (dodać coś o distinct???)
 	all_distinct([E11, E12, E13, E14, E21, E23, E31, E41, E51]),
 	all_distinct([E15, E24, E25, E26, E27, E28, E34, E43, E44]),
 	all_distinct([E16, E17, E18, E19, E29, E36, E37, E38, E39]),
@@ -32,8 +38,9 @@
 	all_distinct([E53, E63, E72, E73, E82, E91, E92, E93, E94]),
 	all_distinct([E57, E67, E76, E77, E78, E86, E88, E95, E96]),
 	all_distinct([E58, E68, E69, E79, E87, E89, E97, E98, E99]).
-	
-sudoku1([
+
+• Fill the given numbers  	
+	sudoku1([
 		[9,_,_,3,_,8,_,_,5],
 		[_,8,_,_,4,_,_,1,_],
 		[_,_,_,_,9,_,_,_,_],
@@ -44,4 +51,10 @@ sudoku1([
 		[_,2,_,_,8,_,_,5,_],
 		[3,_,_,9,_,4,_,_,7]
 		]).
+		
+3. Solution
+We can use the code to generate valid Sudoku boards. To see whole/all result in shape of sudoku (in more clear shape) we can add “maplist(portray_clause, S)”.
+Sample query: sudoku1(S), sudoku(S), maplist(label, S), maplist(portray_clause, S).
 
+4. Summary
+Irregular sudoku is different everytime, that is why this code works only for one which is presented at the beginning. To solve other irregular sudoku it is necessary to describe every group (square) the same as in 32-40 lines. 
