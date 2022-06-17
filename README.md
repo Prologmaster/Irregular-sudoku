@@ -23,7 +23,6 @@ sudoku(Matrix):-
 	L8 = [E81, E82, E83, E84, E85, E86, E87, E88, E89],
 	L9 = [E91, E92, E93, E94, E95, E96, E97, E98, E99],
 	
-	
 	all_distinct([E11, E12, E13, E14, E21, E23, E31, E41, E51]),
 	all_distinct([E15, E24, E25, E26, E27, E28, E34, E43, E44]),
 	all_distinct([E16, E17, E18, E19, E29, E36, E37, E38, E39]),
