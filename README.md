@@ -3,7 +3,11 @@
 
 
 1. Introduction
-XXXXXXXX
+ Sudoku is a logic-based number puzzle. It was invented in the USA by Howard Garns and published in 1979 in the puzzle books.The most common sudoku consists of a 9x9 gird. Some of the squares are already filled. The purpose of the puzzle  is to fill the remaining squares, using numbers from 1 to 9 exactly once in each row, column, and the nine 3 × 3 subgrids. 
+ Except for the simplest version, there are also other variants of the puzzle. In this case, we focus on one of the irregular sudoku in which subgrids take different combinations (thus the shapes) instead of 3x3. However, the rule that the numbers 1-9 will be put in each subgrid once is kept up. 
+ 
+
+
 
 2. Explanation
 
