@@ -3,8 +3,12 @@
 
 
 1. Introduction
- Sudoku is a logic-based number puzzle. It was invented in the USA by Howard Garns and published in 1979 in the puzzle books.The most common sudoku consists of a 9x9 gird. Some of the squares are already filled. The purpose of the puzzle  is to fill the remaining squares, using numbers from 1 to 9 exactly once in each row, column, and the nine 3 × 3 subgrids. 
- Except for the simplest version, there are also other variants of the puzzle. In this case, we focus on one of the irregular sudoku in which subgrids take different combinations (thus the shapes) instead of 3x3. However, the rule that the numbers 1-9 will be put in each subgrid once is kept up. 
+
+Sudoku is a logic-based number puzzle. It was invented in the USA by Howard Garns and published in 1979 in the puzzle books.The most common sudoku consists of a 9x9 gird. Some of the squares are already filled. The purpose of the puzzle  is to fill the remaining squares, using numbers from 1 to 9 exactly once in each row, column, and the nine 3 × 3 subgrids. 
+
+Except for the simplest version, there are also other variants of the puzzle. In this case, we focus on one of the irregular sudoku in which subgrids take different combinations (thus the shapes) instead of 3x3. However, the rule that the numbers 1-9 will be put in each subgrid once is kept up. This makes this type of sudoku more difficult, but also more interesting.
+
+We present the solution of irregular sudoku in Prolog below.
  
 
 
@@ -66,11 +70,14 @@ sudoku(Matrix):-
 		]).
 		
 3. Solution	
+
 We can use the code to generate valid Sudoku boards. To see whole/all result in shape of sudoku (in more clear shape) we can add:
 “maplist(portray_clause, S)”.
+
 Sample query: 
 
 	sudoku1(S), sudoku(S), maplist(label, S), maplist(portray_clause, S).
 
 4. Summary
+
 Irregular sudoku is different everytime, that is why this code works only for one which is presented at the beginning. To solve other irregular sudoku it is necessary to describe every group (square) the same as in 32-40 lines. 
