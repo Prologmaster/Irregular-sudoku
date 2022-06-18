@@ -8,7 +8,7 @@ Sudoku is a logic-based number puzzle. It was invented in the USA by Howard Garn
 
 Except for the simplest version, there are also other variants of the puzzle. In this case, we focus on one of the irregular sudoku in which subgrids take different combinations (thus the shapes) instead of 3x3. However, the rule that the numbers 1-9 will be put in each subgrid once is kept up. This makes this type of sudoku more difficult, but also more interesting.
 
-We present the solution of irregular sudoku in Prolog below.
+Below we present the solution of above-presented irregular sudoku in Prolog programme.
  
 
 
