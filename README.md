@@ -29,13 +29,14 @@ Below we present the explanation of the codes of above-presented irregular sudok
 
 Then we are describing a body created by adding individual elements (goals). The part "sudoku(Matrix)" is the head.
 
-sudoku(Matrix):-
+	sudoku(Matrix):-
 	length(Matrix, 9),
 	maplist(same_length(Matrix), Matrix),
 	append(Matrix, Elems), Elems ins 1..9,
 	maplist(all_distinct, Matrix),
 	transpose(Matrix, Matrix2),
 	maplist(all_distinct, Matrix2),
+	
 	
 • Represents the number of elements in Matrix (subgrids)
 
