@@ -30,7 +30,7 @@ Below we present the explanation of the codes of above-presented irregular sudok
 
 Then we are describing a body created by adding individual elements (goals). 
 
-• The head
+• The head and the neck
 
 	sudoku(Matrix):-
 	
