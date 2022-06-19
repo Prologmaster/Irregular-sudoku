@@ -27,13 +27,13 @@ Below we present the explanation of the codes of above-presented irregular sudok
 	it is true if Matrix unify with a 9x9 matrix 
 	that represent a valid sudoku. 
 	*/
-
-Then we are describing a body created by adding individual elements (goals). 
+ 
 
 • The head and the neck
 
 	sudoku(Matrix):-
-	
+
+Then we are describing a body created by adding individual elements (goals).
 		
 • Represents the number of elements in Matrix (subgrids)
 
