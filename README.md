@@ -2,7 +2,7 @@
 
 
 
-1. Introduction
+1. INTRODUCTION
 
 Sudoku is a logic-based number puzzle. It was invented in the USA by Howard Garns and published in 1979 in the puzzle books.The most common sudoku consists of a 9x9 gird. Some of the squares are already filled. The purpose of the puzzle  is to fill the remaining squares, using numbers from 1 to 9 exactly once in each row, column, and the nine 3 × 3 subgrids. 
 
@@ -11,7 +11,7 @@ Except for the simplest version, there are also other variants of the puzzle. In
 
 
 
-2. Explanation
+2. EXPLANATION
 
 Below we present the explanation of the codes of above-presented irregular sudoku in Prolog programme.
 
@@ -104,7 +104,7 @@ Then we are describing a body created by adding individual elements (goals). The
 		[3,_,_,9,_,4,_,_,7]
 		]).
 		
-3. Solution	
+3. SOLUTION	
 
 We can use the code to generate valid Sudoku boards. To see whole/all result in shape of sudoku (in more clear shape) we can add:
 
@@ -114,6 +114,6 @@ Sample query:
 
 	sudoku1(S), sudoku(S), maplist(label, S), maplist(portray_clause, S).
 
-4. Summary
+4. SUMMARY
 
 Irregular sudoku is different everytime, that is why this code works only for one which is presented at the beginning. To solve other irregular sudoku it is necessary to describe every group (square) the same as in 32-40 lines. 
