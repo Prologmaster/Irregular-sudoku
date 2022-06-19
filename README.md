@@ -18,13 +18,16 @@ Below we present the explanation of the codes of above-presented irregular sudok
 
 	:- use_module(library(clpfd)).
 
-• 
+
+• A block-comment that makes the programme more comprehensible
 
 	/*
 	sudoku(+Matrix)
 	it is true if Matrix unify with a 9x9 matrix 
 	that represent a valid sudoku. 
 	*/
+
+Then we are describing a body created by adding individual elements (goals). The part "sudoku(Matrix)" is the head.
 
 sudoku(Matrix):-
 	length(Matrix, 9),
@@ -33,10 +36,36 @@ sudoku(Matrix):-
 	maplist(all_distinct, Matrix),
 	transpose(Matrix, Matrix2),
 	maplist(all_distinct, Matrix2),
-		
+	
+• Represents the number of elements in Matrix (subgrids)
+
+	length(Matrix, 9),
+
+• Each of the Matrix (subgrids) has the same length as the other Matrix (subgrids)
+
+	maplist(same_length(Matrix), Matrix),
+
+
+• The concatenation of all elements in Matrix; each of the element is between 1 and 9 
+
+	append(Matrix, Elems), Elems ins 1..9,
+
+•
+
+	maplist(all_distinct, Matrix),
+			
+• 
+
+	transpose(Matrix, Matrix2),
+	
+• 	
+
+	maplist(all_distinct, Matrix2),
+	
+
 • Name lines and their elements
 
-		Matrix= [L1, L2, L3, L4, L5, L6, L7, L8, L9],
+	Matrix= [L1, L2, L3, L4, L5, L6, L7, L8, L9],
 	L1 = [E11, E12, E13, E14, E15, E16, E17, E18, E19],
 	L2 = [E21, E22, E23, E24, E25, E26, E27, E28, E29],
 	L3 = [E31, E32, E33, E34, E35, E36, E37, E38, E39],
