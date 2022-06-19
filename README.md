@@ -113,3 +113,9 @@ Sample query:
 4. SUMMARY
 
 Irregular sudoku is different everytime, that is why this code works only for one which is presented at the beginning. To solve other irregular sudoku it is necessary to describe every group (square) the same as in 32-40 lines. 
+
+Authors:
+Kinga Kołtun
+Klara Marzec
+
+For Knowledge Representation Subject
