@@ -12,6 +12,7 @@ Except for the simplest version, there are also other variants of the puzzle. In
 
 
 2. Explanation
+
 Below we present the explanation of the codes of above-presented irregular sudoku in Prolog programme.
 
 • Directive that we use to make integer constraints available in all Prolog programmes
