@@ -8,12 +8,15 @@ Sudoku is a logic-based number puzzle. It was invented in the USA by Howard Garn
 
 Except for the simplest version, there are also other variants of the puzzle. In this case, we focus on one of the irregular sudoku in which subgrids take different combinations (thus the shapes) instead of 3x3. However, the rule that the numbers 1-9 will be put in each subgrid once is kept up. This makes this type of sudoku more difficult, but also more interesting.
 
-Below we present the solution of above-presented irregular sudoku in Prolog programme.
- 
 
 
 
 2. Explanation
+Below we present the explanation of the codes of above-presented irregular sudoku in Prolog programme.
+
+• Directive that we use to make integer constraints available in all Prolog programmes
+	:- use_module(library(clpfd)).
+
 
 /*
 sudoku(+Matrix)
