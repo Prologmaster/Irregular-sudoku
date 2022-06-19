@@ -18,13 +18,13 @@ Below we present the explanation of the codes of above-presented irregular sudok
 
 	:- use_module(library(clpfd)).
 
+• 
 
-/*
-sudoku(+Matrix)
+	/*
+	sudoku(+Matrix)
 	it is true if Matrix unify with a 9x9 matrix 
 	that represent a valid sudoku. 
-	
-*/
+	*/
 
 sudoku(Matrix):-
 	length(Matrix, 9),
@@ -76,7 +76,8 @@ sudoku(Matrix):-
 3. Solution	
 
 We can use the code to generate valid Sudoku boards. To see whole/all result in shape of sudoku (in more clear shape) we can add:
-“maplist(portray_clause, S)”.
+
+	maplist(portray_clause, S).
 
 Sample query: 
 
