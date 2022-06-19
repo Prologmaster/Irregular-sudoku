@@ -119,4 +119,4 @@ Authors:
 Kinga Kołtun
 Klara Marzec
 
-For Knowledge Representation Subject
+Knowledge Representation Project
