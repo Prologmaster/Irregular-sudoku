@@ -117,5 +117,4 @@ Irregular sudoku is different everytime, that is why this code works only for on
 Authors:
 Kinga Kołtun
 Klara Marzec
-
 For Knowledge Representation Subject
