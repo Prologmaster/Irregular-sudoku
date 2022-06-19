@@ -50,15 +50,15 @@ sudoku(Matrix):-
 
 	append(Matrix, Elems), Elems ins 1..9,
 
-•
+•Every Matrix (subgrids) has distinct (not equal pairwise) elements
 
 	maplist(all_distinct, Matrix),
 			
-• 
+• Transposition Matrix into Matrix2 to check if all elements are distinct also by selecting them in the vertical way (turning all the rows of a given matrix into columns and vice-versa)
 
 	transpose(Matrix, Matrix2),
 	
-• 	
+• Same as before- checking if every Matrix2 (subgrids) has all distinct elements
 
 	maplist(all_distinct, Matrix2),
 	
